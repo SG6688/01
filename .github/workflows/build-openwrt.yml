@@ -18,9 +18,9 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-
+# https://github.com/SG6688/openwrt
 env:
-  REPO_URL: https://github.com/SG6688/openwrt
+  REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
