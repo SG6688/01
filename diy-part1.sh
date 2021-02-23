@@ -29,4 +29,4 @@
 
 # 编译luci-app-bypass，把上面这些全部放在diy-1.sh
 
-Replace_File zzz-default-settings package/lean/default-settings/files zzz-default-settings
+
