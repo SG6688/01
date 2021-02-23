@@ -18,9 +18,10 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
+# https://github.com/SG6688/immortalwrt 
 # https://github.com/SG6688/openwrt master
 env:
-  REPO_URL: https://github.com/SG6688/immortalwrt
+  REPO_URL: https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
