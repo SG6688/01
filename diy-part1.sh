@@ -28,3 +28,4 @@
 #find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
 
 # 编译luci-app-bypass，把上面这些全部放在diy-1.sh
+Replace_File zzz-default-settings package/lean/default-settings/files/zzz-default-settings zzz-default-settings
