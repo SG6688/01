@@ -21,7 +21,7 @@ on:
 # https://github.com/SG6688/immortalwrt 
 # https://github.com/SG6688/openwrt master
 env:
-  REPO_URL: https://github.com/SG6688/immortalwrt
+  REPO_URL: https://github.com/SG6688/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
@@ -29,7 +29,7 @@ env:
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
-  UPLOAD_COWTRANSFER: false
+  UPLOAD_COWTRANSFER: true
   UPLOAD_WETRANSFER: true
   UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
