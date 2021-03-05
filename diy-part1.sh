@@ -17,7 +17,7 @@
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 #sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 #sed -i '$a src-git danshui https://github.com/281677160/openwrt-package' feeds.conf.default
-sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+#sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
 
@@ -31,12 +31,12 @@ git clone https://github.com/kenzok8/small.git
 #git clone https://github.com/jerrykuku/luci-app-vssr package/luci-app-vssr
 #git clone https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
 
-#git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
-#svn co https://github.com/garypang13/openwrt-packages/trunk/smartdns
-#svn co https://github.com/garypang13/openwrt-packages/trunk/tcping
-#svn co https://github.com/garypang13/openwrt-packages/trunk/lua-maxminddb
-#find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
-#find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
+git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
+svn co https://github.com/garypang13/openwrt-packages/trunk/smartdns
+svn co https://github.com/garypang13/openwrt-packages/trunk/tcping
+svn co https://github.com/garypang13/openwrt-packages/trunk/lua-maxminddb
+find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
+find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
 
 # 编译luci-app-bypass，把上面这些全部放在diy-1.sh
 
